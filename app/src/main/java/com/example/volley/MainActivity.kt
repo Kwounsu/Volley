@@ -28,8 +28,7 @@ class MainActivity : AppCompatActivity() {
         stringRequest = StringRequest(
             Request.Method.GET, url,
             { response ->
-                // Display the first 500 characters of the response string.
-                textView.text = "$response"
+                textView.text = response
             },
             { textView.text = "That didn't work!" })
 
